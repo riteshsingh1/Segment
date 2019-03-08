@@ -1,0 +1,43 @@
+{
+    "name": "imritesh/segment",
+    "description": ":description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ritesh Singh",
+            "email": "hello@imritesh.com",
+            "homepage": "https://ritesh.dev"
+        }
+    ],
+    "homepage": "https://github.com/imritesh/segment",
+    "keywords": ["Laravel", "Segment"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "imritesh\\Segment\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "imritesh\\Segment\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "imritesh\\Segment\\SegmentServiceProvider"
+            ],
+            "aliases": {
+                "Segment": "imritesh\\Segment\\Facades\\Segment"
+            }
+        }
+    }
+}
